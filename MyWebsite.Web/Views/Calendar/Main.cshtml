@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Main";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<link href="~/FullCalendar/core/main.css" rel="stylesheet" />
+<link href="~/FullCalendar/daygrid/main.css" rel="stylesheet" />
+<script src="~/FullCalendar/core/main.js"></script>
+<script src="~/FullCalendar/daygrid/main.js"></script>
+<div id='calendar'></div>
+<script>
+
+    $(document).ready(function () {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            plugins: ['dayGrid', 'timeGrid', 'list'] // an array of strings!
+        });
+        calendar.render();
+    });
+
+</script>

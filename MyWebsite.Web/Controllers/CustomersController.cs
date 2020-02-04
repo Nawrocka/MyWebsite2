@@ -31,8 +31,8 @@ namespace MyWebsite.Web.Controllers
             if (id == null)
             {
                 return NotFound();
-            }
 
+            }
             var customer = await _context.Customer
                 .FirstOrDefaultAsync(m => m.CustomerID == id);
             if (customer == null)
