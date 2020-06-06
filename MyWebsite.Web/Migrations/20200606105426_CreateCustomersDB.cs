@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace MyWebsite.Web.Migrations
 {
-    public partial class CreateCustomerDatabase : Migration
+    public partial class CreateCustomersDB : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

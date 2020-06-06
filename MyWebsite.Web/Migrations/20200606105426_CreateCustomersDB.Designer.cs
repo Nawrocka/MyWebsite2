@@ -10,8 +10,8 @@ using MyWebsite.Web.Data;
 namespace MyWebsite.Web.Migrations
 {
     [DbContext(typeof(CustomerContext))]
-    [Migration("20200128141018_CreateCustomerDatabase")]
-    partial class CreateCustomerDatabase
+    [Migration("20200606105426_CreateCustomersDB")]
+    partial class CreateCustomersDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
